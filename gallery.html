@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Passengers an Autos and Transportation Category Bootstrap Responsive website Template | Home :: w3layouts</title>
+<title>Passengers an Autos and Transportation Category Bootstrap Responsive website Template | Gallery :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Passengers Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -15,10 +15,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />  <!-- flexslider-CSS --> 
-<link href="css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons -->  
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
+<link href="css/font-awesome.css" rel="stylesheet">		<!-- font-awesome icons --> 
+<link href='css/simplelightbox.min.css' rel='stylesheet' type='text/css'> <!-- light box css -->   
 <!-- //Custom Theme files -->  
+<!-- js --> 
+<script src="js/jquery-2.2.3.min.js"></script>  
+<!-- //js -->  
 <!-- web-fonts -->   
 <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -44,9 +47,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						<div class="w3menu navbar-right">
 							<ul class="nav navbar">
-								<li><a href="index.html" class="active">Home</a></li>
+								<li><a href="index.html">Home</a></li>
 								<li><a href="about.html">About</a></li> 
-								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="gallery.html" class="active">Gallery</a></li>
 								<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-letters="Pages">Pages</span><span class="caret"></span></a>
 									<ul class="dropdown-menu"> 
 										<li><a href="icons.html">Web Icons</a></li>
@@ -62,165 +65,107 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>	
 			<!-- //navigation -->
 			<!-- banner-text -->
-			<div class="banner-text agileinfo"> 
+			<div class="banner-text agileinfo about-bnrtext"> 
 				<div class="container">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<div class="banner-w3lstext">  
-									<h2>Sapiente delectus</h2>
-									<p>Lorem ipsum dolor sit amet. Sed tincidunt lorem sed velit fermentum lobortis.</p>	
-								</div>
-							</li>
-							<li>
-								<div class="banner-w3lstext">  
-									<h3>Fusce dolor semper </h3> 
-									<p>Lorem ipsum dolor sit amet. Sed tincidunt lorem sed velit fermentum lobortis.</p>	
-								</div>
-							</li>
-							<li>
-								<div class="banner-w3lstext">  
-									<h3>Integer vitae ligula </h3> 
-									<p>Lorem ipsum dolor sit amet. Sed tincidunt lorem sed velit fermentum lobortis.</p>	
-								</div>
-							</li>
-						</ul> 
-					</div> 	 
+					<h2><a href="index.html">Home</a> / Gallery</h2> 
 				</div>
 			</div>
-			<!-- //banner-text -->  
-			<!-- arrow bounce --> 
-			<div class="agileits-arrow bounce animated"><a href="#welcome" class="scroll"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
-			<!-- //arrow bounce -->  
+			<!-- //banner-text -->   
 		</div>
 	</div>
 	<!-- //banner --> 
-	<!-- welcome -->
-	<div class="welcome" id="welcome">
-		<div class="container">   
-			<div class="agileits-title">
-				<h3>Who We Are</h3>
-			</div> 
-			<div class="welcomerow-agileinfo">
-				<h5>Blanditiis praesentium deleniti atque corrupti quos corrupti quos dolores</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mattis pharetra turpis, a scelerisque enim venenatis luctus. Cras blandit dolor a facilisis tincidunt. Vivamus sed orci aliquam, aliquet tellus ut, ornare nunc. Praesent lacinia elit id libero pulvinar, sit amet faucibus felis ornare. Pellentesque nulla lorem, pretium vel bibendum in, elementum id urna. Sed interdum interdum accumsan. Aenean nec purus ac orci finibus facilisis. In sit amet placerat nisl, in auctor sapien.</p>
-			</div> 
-			<div class="w3-welcome-grids">
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid"> 
-					<img src="images/img1.jpg" alt=" " class="img-responsive"/>   
-					<div class="agileits-welcome-info">
-						<h4>Vaesent purus</h4>
-						<p>Donec non nibh in dui sagittis finibus. Duis suscipit arcu vel rhoncus molestie eget placerat mauris. </p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="images/img2.jpg" alt=" " class="img-responsive"/>   
-					<div class="agileits-welcome-info">
-						<h4>Suscipit duis </h4>
-						<p>Nibh in dui sagittis donec non finibus. Duis suscipit arcu vel rhoncus molestie eget placerat mauris. </p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="images/img3.jpg" alt=" " class="img-responsive"/>   
-					<div class="agileits-welcome-info">
-						<h4>Tempor purus</h4>
-						<p>Sagittis donec non nibh in dui finibus. Duis suscipit arcu vel rhoncus molestie eget placerat mauris. </p>
-					</div>
-				</div>
-				<div class="col-md-3 col-xs-6 w3l-welcome-grid">
-					<img src="images/img4.jpg" alt=" " class="img-responsive"/>   
-					<div class="agileits-welcome-info">
-						<h4>Praesent tempor</h4>
-						<p>Arcu vel donec non nibh in dui sagittis finibus. Duis suscipit rhoncus molestie eget placerat mauris. </p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div> 
-		</div>
-	</div>
-	<!-- //welcome -->
-	<!-- services -->
-	<div class="services">
-		<div class="container">
-			<div class="agileits-title">
-				<h3>Services</h3>
-			</div>  
-			<div class="services-w3lsrow">
-				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">  
-					<i class="fa fa-gears icon" aria-hidden="true"></i> 
-					<h4>Fugiat Quo</h4>
-					<p>Phasellus at placerat ante nulla adipiscing elit</p>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
-					<div class="w3agile-servs-img">
-						<i class="fa fa-group icon" aria-hidden="true"></i> 
-						<h4>Voluptas </h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
-					<div class="w3agile-servs-img">
-						<i class="fa fa-briefcase icon" aria-hidden="true"></i>
-						<h4>Quo fugiat</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
-					</div>
-				</div> 	
-				<div class="col-md-3 col-sm-3 col-xs-6 services-grids">
-					<div class="w3agile-servs-img">
-						<i class="fa fa-list-alt icon" aria-hidden="true"></i>
-						<h4>Corrupti</h4>
-						<p>Phasellus at placerat ante nulla adipiscing elit</p>
-					</div>
-				</div> 
-				<div class="clearfix"> </div>
-			</div>	 
-		</div>
-	</div>	
-	<!-- //services -->	
-	<!-- testimonials -->
-	<div class="testimonials">
+	<!-- gallery -->
+	<div class="gallery">  
 		<div class="container">  
 			<div class="agileits-title">
-				<h3>Testimonials</h3>
-			</div>  
-			<div class="w3_testimonials_grids">
-				<section class="slider">
-					<div class="flexslider1">
-						<ul class="slides">
-							<li>	
-								<div class="w3_testimonials_text">
-									<img src="images/t1.jpg" alt=" " class="img-responsive" />
-									<h4 class="agiletext-style"><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
-										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-									<h5>John Frank</h5>
-									<p>Transport Agent</p>
-								</div>
-							</li>
-							<li>	
-								<div class="w3_testimonials_text">
-									<img src="images/t2.jpg" alt=" " class="img-responsive" />
-									<h4 class="agiletext-style"><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
-										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-									<h5>Michael Doe</h5>
-									<p>Transport Agent</p>
-								</div>
-							</li>
-							<li>	
-								<div class="w3_testimonials_text">
-									<img src="images/t3.jpg" alt=" " class="img-responsive" />
-									<h4 class="agiletext-style"><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil 
-										impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-									<h5>Thomas Carl</h5>
-									<p>Transport Agent</p>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</section> 
-			</div>
+				<h3>Our Gallery</h3>
+			</div>   
+			<div class="gallery-agileinfo">
+				<ul class="w3gallery-grids">
+					<li>
+						<a href="images/g1.jpg">
+							<img src="images/g1.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+					<li>
+						<a href="images/g2.jpg">
+							<img src="images/g2.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+					<li>
+						<a href="images/g3.jpg">
+							<img src="images/g3.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+					<li>
+						<a href="images/g4.jpg">
+							<img src="images/g4.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li>  
+					<li>
+						<a href="images/img1.jpg">
+							<img src="images/img1.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li>
+					<li>
+						<a href="images/img2.jpg">
+							<img src="images/img2.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+					<li>
+						<a href="images/img3.jpg">
+							<img src="images/img3.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 	
+					<li>
+						<a href="images/img4.jpg">
+							<img src="images/img4.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+					<li>
+						<a href="images/g2.jpg">
+							<img src="images/g2.jpg" class="img-responsive" alt=""/>
+							<div class="agile-figcap">
+								<h4>Our Gallery</h4> 
+							</div> 
+						</a>
+					</li> 
+				</ul>
+				<div class="clearfix"> </div>  
+			</div> 
+			<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
+			<script>
+				$(function(){
+					var gallery = $('.w3gallery-grids li a').simpleLightbox({navText:['&lsaquo;','&rsaquo;']});
+				});
+			</script>   
 		</div>
-	</div>
-	<!-- //testimonials -->
+	</div> 
+	<!-- //gallery -->   
 	<!-- subscribe -->
 	<div class="subscribe jarallax">
 		<div class="container">
@@ -240,7 +185,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="features">
 		<div class="container">   
 			<div class="wthree-features-row">
-				<div class="col-md-6 features-w3grid"> 
+				<div class="col-md-6 features-w3grid">  
 					<div class="features-row2"> 
 						<div class="features-w3lleft">  
 							<h4>New User</h4>
@@ -384,10 +329,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-	<!-- //footer modal -->   
-	<!-- js --> 
-	<script src="js/jquery-2.2.3.min.js"></script> 
-	<script src="js/SmoothScroll.min.js"></script> 
+	<!-- //footer modal -->
+	<!-- jarallax --> 
 	<script src="js/jarallax.js"></script> 
 	<script type="text/javascript">
 		/* init Jarallax */
@@ -397,33 +340,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			imgHeight: 768
 		})
 	</script>  
-	<!-- //js -->
-	<!-- FlexSlider --> 
-	<script defer src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript">
-		$(window).load(function(){
-		  $('.flexslider').flexslider({
-			animation: "slide",
-			start: function(slider){
-			  $('body').removeClass('loading');
-			}
-		  });
-		});
-	</script>
-	<!-- //End-FlexSlider --> 
-	<!-- flexSlider -->  
-	<script type="text/javascript">
-		$(window).load(function(){
-		  $('.flexslider1').flexslider({
-			animation: "slide",
-			start: function(slider){
-			  $('body').removeClass('loading');
-			}
-		  });
-		});
-	</script>
-	<!-- //flexSlider -->	
+	<!-- //jarallax --> 
 	<!-- start-smooth-scrolling --> 
+	<script src="js/SmoothScroll.min.js"></script> 
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>	
 	<script type="text/javascript">
