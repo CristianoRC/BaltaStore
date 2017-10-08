@@ -35,7 +35,7 @@ body a:hover,body a:focus{
 } 
 /*-- banner --*/ 
 .agileits-banner { 
-    background:url(../images/bg.jpg)no-repeat center 0px; 
+    background:url(../img/bg.jpg)no-repeat center 0px; 
 	-webkit-background-size:cover;
     -moz-background-size:cover;
   	-o-background-size:cover;  
@@ -427,7 +427,7 @@ h4.agiletext-style:first-letter {
 .subscribe { 
 	background: #333;
 	text-align:center;
-	background: url(../images/bg1.jpg)no-repeat center bottom fixed;
+	background: url(../img/bg1.jpg)no-repeat center bottom fixed;
 	background-size:cover;
 }
 .agileits-title.title2 h3 {
@@ -521,7 +521,7 @@ a.w3ls-login:hover {
 }
 .footer h3 {
     font-size: 2.2em;
-    color: #ff5722;
+    color: #FF5722;
     margin-bottom: 0.8em;
     font-weight: 100;
     letter-spacing: 1px;
@@ -655,7 +655,7 @@ a.w3ls-login:hover {
     padding:0 1em 0;
 }
 .modal button.close {
-    color: #ff5722;
+    color: #FF5722;
     opacity: 1;
     font-size: 2em;
     outline: none;
@@ -668,7 +668,7 @@ a.w3ls-login:hover {
     font-weight: 300;
 }  
 .modal-body h3 {
-    color: #ff5722;
+    color: #FF5722;
     font-size: 1em;
     text-transform: uppercase; 
     padding: 0.8em 2em;
@@ -726,7 +726,7 @@ div#horizontalTab ul {
 	transition:.5s all;
 }
 .register input[type="submit"]:hover{
-	background:#ff5722;
+	background:#FF5722;
 } 
 .about-modal .modal-body h5 {
     color: #f7542b;
@@ -825,7 +825,7 @@ a.play-icon.popup-with-zoom-anim {
 .numscroller {
     font-size: 2.8em;
     font-weight: 300;
-    color: #ff5722;
+    color: #FF5722;
     margin: 0.5em 0 0;
 	text-align: left;
 }
@@ -1098,7 +1098,7 @@ li.list-group-item1 {
 }   
 .grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.w3ls-hdg, h3.bars {
 	margin-bottom: 1em;
-    color: #ff5722;
+    color: #FF5722;
     font-weight: bold;
 } 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
