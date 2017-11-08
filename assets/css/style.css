@@ -1,0 +1,138 @@
+/*
+Laranja: #EF8F30;
+Laranja amarronzado: #AF6422;
+Laranja avermelhado: #FE4108;
+Azul principal: #244768;
+Azul secundario: #05264B;
+ */
+
+ /* Classes e estilos genericos */
+
+p{
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 25px;
+}
+
+ img{
+     max-width: 100%;
+ }
+
+ ul{
+     list-style: none;
+ }
+
+ a, a:hover, a:focus{
+     text-decoration: none;
+ }
+
+footer{
+    background-color: #3f3f3f;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+ .text-center{
+     text-align: center;
+ }
+
+ .text-justify{
+     text-align: justify;
+ }
+
+ .titulo-principal{
+    font-size: 2em; /* +- 30 px;*/
+    color: #244768;
+    margin: 2rem 0;
+}
+
+.section{
+    padding: 2em 0;
+    width: 100%;
+}
+
+/* Cabeçalho */
+
+.logo{
+    width: 150px;
+}
+
+.header{
+    height: 60vh;
+    min-height: 250 px; color: lightgray;
+    background-size: cover; /*Cobre toda a div*/
+    background-position: center;
+    background-color: lightgray;
+}
+
+.nav{
+    width: 100%;
+    padding: 1em 0; /* X Y*/
+    background-color: #244768;
+    opacity: 0.96;
+}
+
+.img-apresentacao{
+    max-height: 10%;
+}
+
+
+/*Menu*/
+
+.menu{
+    padding: 0;
+    text-align: center;
+}
+
+.menu .menu-item{
+    display: inline-block;
+}
+
+.menu .menu-item .menu-link{
+    display: block;
+    padding: 1em;
+    color: white;
+    text-transform: uppercase;
+    transition: 250ms ease;
+}
+
+.menu .menu-item .menu-link:hover{
+    color: #FE4108;
+}
+
+/*Equipe*/
+
+
+.section.equipe{
+    background-color: lightgray;
+}
+
+.img-equipe{
+    margin-bottom: 1em;
+}
+
+.equipe-legenda{
+    margin: 1rem 0;
+    background-color: rgba(2, 15, 29, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/*Rodapé*/
+
+.logo-rodape{
+    width: 110px;
+    float: left;
+}
+
+
+footer p{
+    color: white;
+}
+
+footer a{
+    color: #FE4108;
+}
+
+footer a:hover{
+    color: #AF6422;
+}

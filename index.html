@@ -1,281 +1,137 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-	<title>Primeira Arte Crew</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Passengers Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!-- Custom Theme files -->
-	<link rel="icon" type="image/png" href="img/Headphones.png">
-	
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-	<!-- flexslider-CSS -->
-	<link href="css/font-awesome.css" rel="stylesheet">
-	<!-- font-awesome icons -->
-	<!-- //Custom Theme files -->
-	<!-- web-fonts -->
-	<link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
-	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-	<!-- //web-fonts -->
+	<title>Projeto WDR</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="assets/css/vendor/ress.css">
+	<link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/vendor/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
 <body>
-	<!-- banner -->
-	<div class="agileits-banner">
-		<div class="bnr-agileinfo">
-			<!-- navigation -->
-			<div class="top-nav w3-agiletop">
-				<div class="container">
-					<div class="navbar-header w3llogo">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a href="index.html">
-							<img class="img-responsive" width="5%" src="img/Headphones.png" alt="headphones">
-						</a>
+	<header class="header" style="background-image:url(assets/img/imagem1.jpg)">
+		<!-- Position fixed Top 0 Left 0 - Cabeçalho fixo -->
+		<nav class="nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<img class="logo" src="assets/img/saspi-2017.svg" title="Saspi 2017" alt="Logo saspi 2017">
 					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<div class="w3menu navbar-right">
-							<ul class="nav navbar">
-								<li>
-									<a href="index.html" class="active">Home</a>
-								</li>
-								<li>
-									<a href="#">Músicas</a>
-								</li>
-								<li>
-									<a href="#">Contato</a>
-								</li>
-							</ul>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-			</div>
-			<!-- //navigation -->
-			<!-- banner-text -->
-			<div class="banner-text agileinfo">
-				<div class="container">
-					<div class="flexslider">
-						<ul class="slides">
-							<li>
-								<div class="banner-w3lstext">
-									<h3>Primeira Arte Crew</h3>
-								</div>
+					<div class="col-xs-12 col-md-6">
+						<span class="hide-desktop hamburger">
+							<i id="iconMenu" class="fa fa-bars" aria-hidden="true"></i>
+						</span>
+						<ul class="menu">
+							<li class="menu-item">
+								<a href="#" class="menu-link">Home</a>
 							</li>
-							<li>
-								<div class="banner-w3lstext">
-									<h3>Primeira Arte Crew</h3>
-								</div>
+							<li class="menu-item">
+								<a href="#apresentacao" class="menu-link">Sobre</a>
 							</li>
-							<li>
-								<div class="banner-w3lstext">
-									<h3>Primeira Arte Crew</h3>
-								</div>
+							<li class="menu-item">
+								<a href="#equipe" class="menu-link">Equipe</a>
+							</li>
+							<li class="menu-item">
+								<a href="#contato" class="menu-link">Contato</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			<!-- //banner-text -->
-			<!-- arrow bounce -->
-			<div class="agileits-arrow bounce animated">
-				<a href="#welcome" class="scroll">
-					<i class="fa fa-angle-down" aria-hidden="true"></i>
-				</a>
-			</div>
-			<!-- //arrow bounce -->
-		</div>
-	</div>
-	<!-- //register modal -->
-	<!-- footer -->
-	<div class="footer w3-w3layouts">
+		</nav>
+	</header>
+
+	<section class="section apresetacao" id="apresentacao">
 		<div class="container">
-			<div class="footer-agileinfo">
-				<div class="col-md-4 col-sm-4 footer-wthreegrid">
-					<h3>Sobre</h3>
-					<div class=" footerabt-w3text">
-						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi non nibh nec enim
-							sollicitudin interdum. </p>
-						<div class="social-w3licon">
-							<a href="#" class="social-button twitter">
-								<i class="fa fa-twitter"></i>
-							</a>
-							<a href="#" class="social-button facebook">
-								<i class="fa fa-facebook"></i>
-							</a>
-							<a href="#" class="social-button google">
-								<i class="fa fa-google-plus"></i>
-							</a>
-							<a href="#" class="social-button dribbble">
-								<i class="fa fa-dribbble"></i>
-							</a>
-						</div>
-					</div>
-					<div class="clearfix"> </div>
+			<div class="row">
+				<div class="col-xs-12 col-md-6">
+					<h1 class="titulo-principal">Bem vindo a Saspi 2017</h1>
+					<p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Praesent vel viverra nisi. Mauris aliquet
+						nunc non turpis scelerisque, eget. Mé faiz elementum girarzis, nisi eros vermeio. Viva Forevis aptent taciti sociosqu
+						ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Leite de capivaris, leite
+						de mula manquis sem cabeça. Copo furadis é disculpa de bebadis, arcu quam euismod magna. A ordem dos tratores não altera
+						o pão duris. Suco de cevadiss deixa as pessoas mais interessantis.</p>
+					<p class="text-justify">Mussum Ipsum, cacilds vidis litro abertis. Quem manda na minha terra sou euzis! Praesent vel viverra nisi. Mauris aliquet
+						nunc non turpis scelerisque, eget. Mé faiz elementum girarzis, nisi eros vermeio. Viva Forevis aptent taciti sociosqu
+						ad litora torquent. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Leite de capivaris, leite
+						de mula manquis sem cabeça. Copo furadis é disculpa de bebadis, arcu quam euismod magna. A ordem dos tratores não altera
+						o pão duris. Suco de cevadiss deixa as pessoas mais interessantis; de mula manquis sem cabeça. Copo furadis é disculpa
+						de bebadis.</p>
 				</div>
-				<div class="col-md-4 col-sm-4 footer-wthreegrid">
-					<h3>Recentes</h3>
-					<ul>
-						<li>
-							<a href="#myModal" data-toggle="modal">
-								<i class="fa fa-angle-right"></i>Vestibulum felis</a>
-						</li>
-						<li>
-							<a href="#myModal" data-toggle="modal">
-								<i class="fa fa-angle-right"></i>Mauris at tellus</a>
-						</li>
-						<li>
-							<a href="#myModal" data-toggle="modal">
-								<i class="fa fa-angle-right"></i>Donec ut lectus</a>
-						</li>
-						<li>
-							<a href="#myModal" data-toggle="modal">
-								<i class="fa fa-angle-right"></i>Vitae interdum</a>
-						</li>
-					</ul>
+
+				<div class="col-xs-12 col-md-6">
+					<img src="assets/img/IFSulPadro.png" alt="Computador" class="img-apresentacao">
 				</div>
-				<div class="col-md-4 col-sm-4 footer-wthreegrid footer-tags">
-					<h3>Tag Cloud</h3>
-					<ul>
-						<li>
-							<a href="index.html">Home</a>
-						</li>
-						<li>
-							<a href="about.html">About</a>
-						</li>
-						<li>
-							<a href="codes.html">Codes</a>
-						</li>
-						<li>
-							<a href="gallery.html">Gallery</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="clearfix"> </div>
 			</div>
 		</div>
-	</div>
-	<div class="copy-right">
+	</section>
+	<section class="section equipe" id="equipe">
 		<div class="container">
-			<p>© 2017 Primeira Arte Crew. Todos os direitos reservados | Design by
-				<a href="http://w3layouts.com"> W3layouts.</a>
-			</p>
-		</div>
-	</div>
-	<!-- //footer -->
-	<!-- footer modal -->
-	<div class="modal about-modal w3-agileits fade" id="myModal" tabindex="-1" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+			<div class="row">
+				<h2 class="titulo-principal text-center">Nossa equipe</h2>
+				<div class="col-xs-12 col-md-4">
+					<figure class="text-center img-equipe">
+						<img style="float:inherit" src="assets/img/equipe1.jpg">
+						<figcaption class="equipe-legenda">
+							<p>Bill Gates</p>
+						</figcaption>
+					</figure>
 				</div>
-				<div class="modal-body">
-					<img src="images/img1.jpg" class="img-responsive" alt="">
-					<h5>Cras rutrum iaculis enim</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at. Donec
-						fringilla lacus eu pretium rutrum. Cras aliquet congue ullamcorper. Etiam mattis eros eu ullamcorper volutpat. Proin
-						ut dui a urna efficitur varius. uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis
-						enim, Lorem ipsum dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum
-						et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate. </p>
+				<div class="col-xs-12 col-md-4">
+					<figure class="text-center img-equipe">
+						<img src="assets/img/equipe2.jpg">
+						<figcaption class="equipe-legenda">
+							<p>Elon Musk</p>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-xs-12 col-md-4 text-center">
+					<figure class="text-center img-equipe">
+						<img src="assets/img/equipe3.jpg">
+						<figcaption class="equipe-legenda">
+							<p>Mark Zuckerberg</p>
+						</figcaption>
+					</figure>
 				</div>
 			</div>
 		</div>
-	</div>
-	<!-- //footer modal -->
-	<!-- js -->
-	<script src="js/jquery-2.2.3.min.js"></script>
-	<script src="js/SmoothScroll.min.js"></script>
-	<script src="js/jarallax.js"></script>
-	<script type="text/javascript">
-		/* init Jarallax */
-		$('.jarallax').jarallax({
-			speed: 0.5,
-			imgWidth: 1366,
-			imgHeight: 768
-		})
-	</script>
-	<!-- //js -->
-	<!-- FlexSlider -->
-	<script defer src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript">
-		$(window).load(function () {
-			$('.flexslider').flexslider({
-				animation: "slide",
-				start: function (slider) {
-					$('body').removeClass('loading');
-				}
-			});
-		});
-	</script>
-	<!-- //End-FlexSlider -->
-	<!-- flexSlider -->
-	<script type="text/javascript">
-		$(window).load(function () {
-			$('.flexslider1').flexslider({
-				animation: "slide",
-				start: function (slider) {
-					$('body').removeClass('loading');
-				}
-			});
-		});
-	</script>
-	<!-- //flexSlider -->
-	<!-- start-smooth-scrolling -->
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function ($) {
-			$(".scroll").click(function (event) {
-				event.preventDefault();
+	</section>
 
-				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-			});
-		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<!-- smooth-scrolling-of-move-up -->
+	<section class="section contato" id="contato">
+
+	</section>
+
 	<script type="text/javascript">
-		$(document).ready(function () {
-			/*
-			var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-			};
-			*/
+		var hamburger = document.querySelector(".hamburger");
+		var menu = document.querySelector(".menu");
+		var iconMenu = document.querySelector("#iconMenu");
 
-			$().UItoTop({ easingType: 'easeOutQuart' });
-
+		hamburger.addEventListener("click", function () {
+			menu.classList.toggle("visible");
+			iconMenu.classList.toggle("fa-bars");
+			iconMenu.classList.toggle("fa-times");
 		});
 	</script>
-	<!-- //smooth-scrolling-of-move-up -->
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="js/bootstrap.js"></script>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-xs-6">
+					<p>Desenvolvido por
+						<a href="https://github.com/cristianorc" target="_blank">@CristianoRC</a>
+					</p>
+				</div>
+
+				<div class="col-md-2 col-md-offset-6">
+					<img class="logo-rodape" src="assets/img/saspi-2017.svg" title="Saspi 2017" alt="Logo saspi 2017">
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>
