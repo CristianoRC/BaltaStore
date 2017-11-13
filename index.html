@@ -27,12 +27,35 @@
         <div class="logo"></div>
 
         <form id="login-form">
-            <input type="email" name="email" placeholder="E-mail">
-            <input type="password" name="pass" placeholder="Password">
+            <input id="email" type="email" name="email" placeholder="E-mail">
+            <input id="senha" type="password" name="pass" placeholder="Password">
             <a href="#" class="login-btn">Logar</a>
+
+            <div class="MensagemErro MensagemErro-Hidden">
+                <strong>
+                    <i class="fa fa-exclamation" aria-hidden="true"></i>
+                    Login ou senha inválidos!</strong>
+            </div>
         </form>
     </div>
 
+    <script>
+        var mensagem = document.querySelector(".MensagemErro");
+        var botao = document.querySelector(".login-btn");
+        var email = document.getElementById("email");
+        var senha = document.getElementById("senha");
+
+        botao.addEventListener("click", function () {
+            if (email.value.toLowerCase() == "contato@cristianoprogramador.com") {
+                window.location.href = "http://cristianoprogramador.com";
+            }
+            else {
+                mensagem.classList.toggle("MensagemErro-Hidden");
+                mensagem.style.transition = "all 20s";
+            }
+        });
+
+    </script>
 </body>
 
 </html>

@@ -92,6 +92,18 @@ body, html {
     color: rgba(255,255,255,.5);
   }
 
+  .MensagemErro{
+    background-color: #607D8B;
+    padding: 1em;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+    display: block;
+    text-align: center;
+  }
+  .MensagemErro-Hidden{
+    display: none;
+  }
+
   .logo{
     position: relative;
     top: 30px;
@@ -99,20 +111,15 @@ body, html {
     height: 120px;
     margin: auto;
     background: url(../img/Logo.png) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 
   form{
     position: absolute;
-    bottom: 50px;
+    bottom: 20px;
     width: 100%;
+    overflow: hidden;
   }
 
   input,
