@@ -1,0 +1,13 @@
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Tests.deps.json
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Tests.runtimeconfig.json
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Tests.runtimeconfig.dev.json
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Tests.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Tests.pdb
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.csproj.CoreCompileInputs.cache
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.AssemblyInfoInputs.cache
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.AssemblyInfo.cs
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.pdb

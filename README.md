@@ -1,1 +1,0 @@
-# Painel Cristiano Raffi Cunha

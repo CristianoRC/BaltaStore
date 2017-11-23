@@ -1,0 +1,8 @@
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/bin/Debug/netstandard2.0/BaltaStore.Shered.deps.json
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/bin/Debug/netstandard2.0/BaltaStore.Shered.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/bin/Debug/netstandard2.0/BaltaStore.Shered.pdb
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/obj/Debug/netstandard2.0/BaltaStore.Shered.csproj.CoreCompileInputs.cache
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/obj/Debug/netstandard2.0/BaltaStore.Shered.AssemblyInfoInputs.cache
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/obj/Debug/netstandard2.0/BaltaStore.Shered.AssemblyInfo.cs
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/obj/Debug/netstandard2.0/BaltaStore.Shered.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/obj/Debug/netstandard2.0/BaltaStore.Shered.pdb
