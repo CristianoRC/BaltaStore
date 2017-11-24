@@ -11,3 +11,5 @@
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.AssemblyInfo.cs
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.dll
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/obj/Debug/netcoreapp2.0/BaltaStore.Tests.pdb
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Domain.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Tests/bin/Debug/netcoreapp2.0/BaltaStore.Domain.pdb

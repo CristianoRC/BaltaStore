@@ -1,3 +1,4 @@
+using BaltaStore.Domain.StoreContext.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BaltaStore.Tests
