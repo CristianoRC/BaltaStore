@@ -2,7 +2,7 @@ namespace BaltaStore.Domain.StoreContext.Enums
 {
     public enum EAddressType
     {
-        Shipping = 1,
-        Billing = 2
+        Shipping = 1, //Remessa
+        Billing = 2 //Cobrança
     }
 }
