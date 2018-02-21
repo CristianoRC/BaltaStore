@@ -23,8 +23,9 @@ namespace BaltaStore.Tests
 
             //Pedido
             var order = new Order(customer);
-            order.AddItem(new OrderItem(mouse, 1));
-            order.AddItem(new OrderItem(mouseSemFio, 3));
+
+            order.AddItem(mouse, 1);
+            order.AddItem(mouseSemFio, 3);
 
             //Gerar o pedido
             order.Place();
