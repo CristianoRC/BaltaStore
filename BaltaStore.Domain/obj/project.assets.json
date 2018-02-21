@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Flunt/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -11,7 +23,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -29,8 +41,18 @@
     }
   },
   "libraries": {
+    "Flunt/1.0.2": {
+      "sha512": "HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "type": "package",
+      "path": "flunt/1.0.2",
+      "files": [
+        "flunt.1.0.2.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard1.3/Flunt.dll"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "Y1S6uYx1kzNvYkZzi4/WQ0Y8+uC1rwa3vGRIZQO9+LX+1Sua/uHy3GGoFGtC4y0cfovkRXBd49czFW8Wlh6pow==",
+      "sha512": "XT5JSlM420ScAODv9lCvAWXwddqloyV+wIXgZMPiqscvs3CqlQoZUh6PwQusWK6HyHy5fTUXtWzBXvXU0pOOVg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -42,10 +64,10 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.1": {
+      "sha512": "oA6nwv9MhEKYvLpjZ0ggSpb1g4CQViDVQjLUcDWg598jtvJbpfeP2reqwI1GLW2TbxC/Ml7xL6BBR1HmKPXlTg==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.1",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -166,14 +188,15 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.0"
+      "Flunt >= 1.0.2",
+      "NETStandard.Library >= 2.0.1"
     ]
   },
   "packageFolders": {
@@ -215,10 +238,14 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Flunt": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.1, )",
             "autoReferenced": true
           }
         },
