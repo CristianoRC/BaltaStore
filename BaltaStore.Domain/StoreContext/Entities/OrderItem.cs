@@ -14,6 +14,8 @@ namespace BaltaStore.Domain.StoreContext.Entities
             if (Product.QuantityOnHand < quantity)
                 AddNotification("Quantity",
                 $"Existe apenas {Product.QuantityOnHand} {Product.Title} em estoque.");
+
+            product.DecreaseQuantity(quantity);
         }
 
         public Product Product { get; private set; }
