@@ -3,6 +3,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Flunt" Version="1.0.2"/>
+    <PackageReference Include="Flunt" Version="1.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaltaStore.Shered\BaltaStore.Shered.csproj" />
   </ItemGroup>
 </Project>

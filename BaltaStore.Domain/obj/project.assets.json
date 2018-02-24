@@ -37,6 +37,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "BaltaStore.Shered/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/BaltaStore.Shered.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaltaStore.Shered.dll": {}
+        }
       }
     }
   },
@@ -191,10 +201,16 @@
         "netstandard.library.2.0.1.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "BaltaStore.Shered/1.0.0": {
+      "type": "project",
+      "path": "../BaltaStore.Shered/BaltaStore.Shered.csproj",
+      "msbuildProject": "../BaltaStore.Shered/BaltaStore.Shered.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BaltaStore.Shered >= 1.0.0",
       "Flunt >= 1.0.2",
       "NETStandard.Library >= 2.0.1"
     ]
@@ -226,7 +242,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/BaltaStore.Shered.csproj": {
+              "projectPath": "/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/BaltaStore.Shered.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

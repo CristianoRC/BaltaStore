@@ -1617,6 +1617,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "BaltaStore.Shered": "1.0.0",
           "Flunt": "1.0.2"
         },
         "compile": {
@@ -1624,6 +1625,16 @@
         },
         "runtime": {
           "bin/placeholder/BaltaStore.Domain.dll": {}
+        }
+      },
+      "BaltaStore.Shered/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/BaltaStore.Shered.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaltaStore.Shered.dll": {}
         }
       }
     }
@@ -5650,6 +5661,11 @@
       "type": "project",
       "path": "../BaltaStore.Domain/BaltaStore.Domain.csproj",
       "msbuildProject": "../BaltaStore.Domain/BaltaStore.Domain.csproj"
+    },
+    "BaltaStore.Shered/1.0.0": {
+      "type": "project",
+      "path": "../BaltaStore.Shered/BaltaStore.Shered.csproj",
+      "msbuildProject": "../BaltaStore.Shered/BaltaStore.Shered.csproj"
     }
   },
   "projectFileDependencyGroups": {
