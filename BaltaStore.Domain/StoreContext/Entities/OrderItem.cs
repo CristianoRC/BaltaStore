@@ -1,9 +1,10 @@
 using System.Collections.Generic;
+using BaltaStore.Shered.Entities;
 using Flunt.Notifications;
 
 namespace BaltaStore.Domain.StoreContext.Entities
 {
-    public class OrderItem : Notifiable
+    public class OrderItem : Entity
     {
         public OrderItem(Product product, decimal quantity)
         {

@@ -16,7 +16,7 @@ namespace BaltaStore.Domain.StoreContext.CustomerCommands.Inputs
         //FAIL FAST VALIDATION
         //Faz uma varredura inicial para evitar comunicações 
         //futuras no banco e processamento desnecessário
-        public bool Valid()
+        public bool Validate()
         {
             AddNotifications(new Contract()
                         .HasMaxLen("Primeiro nome", 2, "firstName", "Nome inválido")
@@ -24,7 +24,7 @@ namespace BaltaStore.Domain.StoreContext.CustomerCommands.Inputs
                         .IsEmail(Email, "Email", "Email Inválido")
                         .HasLen(Document, 11, "Document", "CPF inválido"));
 
-            return Valid();
+            return Valid;
         }
     }
 }

@@ -15,13 +15,13 @@ namespace BaltaStore.Domain.StoreContext.OrderCommand.Inputs
         public Guid IDCustomer { get; set; }
         public IList<OrderItemsCommand> OrderItems { get; set; }
 
-        public bool Valid()
+        public bool Validate()
         {
             AddNotifications(new Contract()
             .HasLen(IDCustomer.ToString(),36,"Customer","ID do cliente inválido")
             .IsGreaterThan(OrderItems.Count,0,"OrderItems","Nenhum item no pedido"));
 
-            return Valid();
+            return Valid;
         }
     }
 

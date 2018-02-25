@@ -1,8 +1,9 @@
+using BaltaStore.Shered.Entities;
 using Flunt.Notifications;
 
 namespace BaltaStore.Domain.StoreContext.Entities
 {
-    public class Product : Notifiable
+    public class Product : Entity
     {
         public Product(
             string title,

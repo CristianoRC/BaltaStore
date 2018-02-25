@@ -17,7 +17,7 @@ namespace BaltaStore.Domain.StoreContext.CustomerCommands.Inputs
         public string ZipCode { get; set; }
         public Enums.EAddressType Type { get; set; }
 
-        bool ICommand.Valid()
+        bool ICommand.Validate()
         {
             return Valid;
         }
