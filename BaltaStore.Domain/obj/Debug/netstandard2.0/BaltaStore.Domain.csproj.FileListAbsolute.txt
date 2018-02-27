@@ -6,3 +6,5 @@
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/obj/Debug/netstandard2.0/BaltaStore.Domain.AssemblyInfo.cs
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/obj/Debug/netstandard2.0/BaltaStore.Domain.dll
 /home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/obj/Debug/netstandard2.0/BaltaStore.Domain.pdb
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/bin/Debug/netstandard2.0/BaltaStore.Shered.dll
+/home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/bin/Debug/netstandard2.0/BaltaStore.Shered.pdb

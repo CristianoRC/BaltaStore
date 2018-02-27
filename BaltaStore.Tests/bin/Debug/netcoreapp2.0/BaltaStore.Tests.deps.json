@@ -997,10 +997,19 @@
       },
       "BaltaStore.Domain/1.0.0": {
         "dependencies": {
+          "BaltaStore.Shered": "1.0.0",
           "Flunt": "1.0.2"
         },
         "runtime": {
           "BaltaStore.Domain.dll": {}
+        }
+      },
+      "BaltaStore.Shered/1.0.0": {
+        "dependencies": {
+          "Flunt": "1.0.2"
+        },
+        "runtime": {
+          "BaltaStore.Shered.dll": {}
         }
       }
     }
@@ -1509,6 +1518,11 @@
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
     "BaltaStore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BaltaStore.Shered/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

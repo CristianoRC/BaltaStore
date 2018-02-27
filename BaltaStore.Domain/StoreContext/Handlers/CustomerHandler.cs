@@ -21,7 +21,7 @@ namespace BaltaStore.Domain.StoreContext.Handlers
         private readonly IEmailService _emailService;
 
 
-        protected CustomerHandler(ICustomerRepository repository, IEmailService emailService)
+        public CustomerHandler(ICustomerRepository repository, IEmailService emailService)
         {
             _repository = repository;
             _emailService = emailService;
@@ -61,7 +61,6 @@ namespace BaltaStore.Domain.StoreContext.Handlers
 
             //Retornar o resultado para tela;
             return new CreateCustomerCommandResult(customer.Id, name.ToString(), email.Address);
-
         }
 
         public ICommandResult Handle(AddAddressCommand command)

@@ -11,8 +11,8 @@ namespace BaltaStore.Domain.StoreContext.ValueObjects
             LastName = lastName;
 
             AddNotifications(new Contract()
-            .HasMaxLen("Primeiro nome", 2, "firstName", "Nome inválido")
-            .HasMinLen("Sobrenome", 2, "lastname", "Sobrenome inválido"));
+            .HasMinLen(FirstName, 2, "firstName", "Nome inválido")
+            .HasMinLen(LastName, 2, "lastname", "Sobrenome inválido"));
         }
 
         public string FirstName { get; private set; }
