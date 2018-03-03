@@ -10,7 +10,7 @@ namespace BaltaStore.Tests.Handlers
     public class CustomerHandlerTests
     {
         [TestMethod]
-        public void ShouldRegisterCustomerWhenCommandIsValid()
+        public void DeveRegistrarOClienteQuandoOCommandForValido()
         {
             var command = new CreateCustomerCommand();
             command.FirstName = "Cristiano";
