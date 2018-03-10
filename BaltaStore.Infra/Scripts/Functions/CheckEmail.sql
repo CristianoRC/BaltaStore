@@ -1,4 +1,4 @@
-CREATE OR REPLACE FUNCTION public.CheckMail(text)
+CREATE OR REPLACE FUNCTION public.CheckEmail(text)
 RETURNS smallint
 LANGUAGE plpgsql
 AS

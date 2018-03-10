@@ -23,7 +23,7 @@ namespace BaltaStore.Domain.StoreContext.Entities
             State = state;
             Country = country;
             ZipCode = zipCode;
-            AddressType = addressType;
+            Type = addressType;
         }
         public string Street { get; private set; }
         public string Number { get; private set; }
@@ -32,7 +32,7 @@ namespace BaltaStore.Domain.StoreContext.Entities
         public string State { get; private set; }
         public string Country { get; private set; }
         public string ZipCode { get; private set; }
-        public EAddressType AddressType { get; private set; }
+        public EAddressType Type { get; private set; }
 
         public override string ToString()
         {

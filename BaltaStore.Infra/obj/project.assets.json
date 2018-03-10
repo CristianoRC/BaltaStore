@@ -397,6 +397,20 @@
           "lib/netstandard1.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
+      "BaltaStore.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "BaltaStore.Shered": "1.0.0",
+          "Flunt": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/BaltaStore.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BaltaStore.Domain.dll": {}
+        }
+      },
       "BaltaStore.Shered/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1881,6 +1895,11 @@
         "system.threading.tasks.extensions.nuspec"
       ]
     },
+    "BaltaStore.Domain/1.0.0": {
+      "type": "project",
+      "path": "../BaltaStore.Domain/BaltaStore.Domain.csproj",
+      "msbuildProject": "../BaltaStore.Domain/BaltaStore.Domain.csproj"
+    },
     "BaltaStore.Shered/1.0.0": {
       "type": "project",
       "path": "../BaltaStore.Shered/BaltaStore.Shered.csproj",
@@ -1889,6 +1908,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BaltaStore.Domain >= 1.0.0",
       "BaltaStore.Shered >= 1.0.0",
       "Dapper >= 1.50.4",
       "NETStandard.Library >= 2.0.1",
@@ -1925,6 +1945,9 @@
           "projectReferences": {
             "/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/BaltaStore.Shered.csproj": {
               "projectPath": "/home/cristiano/Projetos/BaltaStore/BaltaStore.Shered/BaltaStore.Shered.csproj"
+            },
+            "/home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/BaltaStore.Domain.csproj": {
+              "projectPath": "/home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/BaltaStore.Domain.csproj"
             }
           }
         }
