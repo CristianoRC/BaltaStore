@@ -9,7 +9,6 @@ namespace BaltaStore.Tests.Entities
     public class OrderTests
     {
         private Order _order;
-        private Customer _customer;
 
         private Product _mouse;
         private Product _teclado;
