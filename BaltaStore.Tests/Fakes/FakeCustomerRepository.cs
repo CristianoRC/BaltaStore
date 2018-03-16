@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using BaltaStore.Domain.StoreContext.Entities;
+using BaltaStore.Domain.StoreContext.Queries;
 using BaltaStore.Domain.StoreContext.Repositories;
 
 namespace BaltaStore.Tests.Fakes
@@ -15,9 +18,24 @@ namespace BaltaStore.Tests.Fakes
             return false;
         }
 
+        public IEnumerable<ListCustomerQueryResult> Get()
+        {
+            return null;
+        }
+
+        public ListCustomerQueryResult Get(Guid id)
+        {
+            return null;
+        }
+
+        public IEnumerable<CustomerOrdersQuery> GetOrders(Guid id)
+        {
+            return null;
+        }
+
         public void Save(Customer customer)
         {
-            
+
         }
     }
 }

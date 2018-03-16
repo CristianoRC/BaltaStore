@@ -1,5 +1,8 @@
+using System;
+using System.Collections.Generic;
 using System.Data;
 using BaltaStore.Domain.StoreContext.Entities;
+using BaltaStore.Domain.StoreContext.Queries;
 using BaltaStore.Domain.StoreContext.Repositories;
 using BaltaStore.Infra.StoreContext.DataContexts;
 using Dapper;
@@ -8,7 +11,7 @@ namespace BaltaStore.Infra.StoreContext.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly BaltaDataContext _dataContext;
+        private BaltaDataContext _dataContext;
 
         public CustomerRepository(BaltaDataContext dataContext)
         {
@@ -19,23 +22,48 @@ namespace BaltaStore.Infra.StoreContext.Repositories
         {
             return _dataContext.Connection.QueryFirst<bool>
                     ("select CheckDocument(@document)",
-                      document);
+                      new { document = document });
         }
 
         public bool CheckEmail(string email)
         {
             return _dataContext.Connection.QueryFirst<bool>
                     ("select CheckEmail(@email)",
-                      email);
+                      new { email = email });
+        }
+
+        public IEnumerable<ListCustomerQueryResult> Get()
+        {
+            return _dataContext.Connection.Query<ListCustomerQueryResult>
+            ("select * from public.QueryCutomers");
+        }
+
+        public ListCustomerQueryResult Get(Guid id)
+        {
+            var sql = @"SELECT customer.id,
+                    ((customer.firstname)::text || (customer.lastname)::text) AS name,
+                    customer.document,customer.email
+                    FROM customer where id = @id";
+
+            return _dataContext.Connection.QueryFirst<ListCustomerQueryResult>(sql,
+                                                        new { id = id.ToString() });
+        }
+
+        public IEnumerable<CustomerOrdersQuery> GetOrders(Guid id)
+        {
+            var sql = @"";
+
+            return _dataContext.Connection.Query<CustomerOrdersQuery>(sql,
+                                                        new { id = id.ToString() });
         }
 
         public void Save(Customer customer)
         {
-            _dataContext.Connection.Execute(@"select createcustomer(@ID,@fistName,
+            _dataContext.Connection.Execute(@"insert into customers values(@ID,@fistName,
                                             @lastName,@document,@email,@phone)",
                 new
                 {
-                    ID = customer.Id,
+                    ID = customer.Id.ToString(),
                     fistName = customer.Name.FirstName,
                     lastName = customer.Name.LastName,
                     document = customer.Document.Number,
@@ -49,8 +77,8 @@ namespace BaltaStore.Infra.StoreContext.Repositories
                                     @complement,@city,@state,@country,@zipcode,@type)",
                 new
                 {
-                    id = addresTemp.Id,
-                    idcustomer = customer.Id,
+                    ID = addresTemp.Id,
+                    IDCustomer = customer.Id,
                     street = addresTemp.Street,
                     number = addresTemp.Number,
                     complement = addresTemp.Complement,

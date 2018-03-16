@@ -1,24 +1,39 @@
 using System;
 using System.Collections.Generic;
+using BaltaStore.Domain.StoreContext.Commands.CustomerCommands.Outputs;
+using BaltaStore.Domain.StoreContext.CustomerCommands.Inputs;
 using BaltaStore.Domain.StoreContext.Entities;
+using BaltaStore.Domain.StoreContext.Handlers;
+using BaltaStore.Domain.StoreContext.Queries;
+using BaltaStore.Domain.StoreContext.Repositories;
+using BaltaStore.Infra.StoreContext.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BaltaStore.API.Controllers
 {
     public class CustomerController : Controller
     {
+        private readonly ICustomerRepository _repository;
+        private readonly CustomerHandler _customerHandler;
+
+        public CustomerController(ICustomerRepository repository, CustomerHandler handler)
+        {
+            _repository = repository;
+            _customerHandler = handler;
+        }
+
         [HttpGet]
         [Route("customers")]
-        public IList<Customer> Get()
+        public IEnumerable<ListCustomerQueryResult> Get()
         {
-            return null;
+            return _repository.Get();
         }
 
         [HttpGet]
         [Route("customers/{id}")]
-        public Customer GetByID(Guid id)
+        public ListCustomerQueryResult GetByID(Guid id)
         {
-            return null;
+            return _repository.Get(id);
         }
 
         [HttpGet]
@@ -31,14 +46,19 @@ namespace BaltaStore.API.Controllers
 
         [HttpPost]
         [Route("customers")]
-        public Customer Post([FromBody]Customer customer)
+        public object Post([FromBody]CreateCustomerCommand customer)
         {
-            return null;
+            var result = (CreateCustomerCommandResult)_customerHandler.Handle(customer);
+
+            if (_customerHandler.Valid)
+                return result;
+
+            return BadRequest(_customerHandler.Notifications);
         }
 
         [HttpPut]
         [Route("customers/{id}")]
-        public Customer Put([FromBody]Customer customer, Guid id)
+        public Customer Put([FromBody]CreateCustomerCommand customer, Guid id)
         {
             return null;
         }
@@ -47,7 +67,7 @@ namespace BaltaStore.API.Controllers
         [Route("customers/{id}")]
         public void Delet(Guid id)
         {
-            
+
         }
     }
 }
