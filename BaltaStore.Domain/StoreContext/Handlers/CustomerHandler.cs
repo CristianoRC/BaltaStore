@@ -63,6 +63,41 @@ namespace BaltaStore.Domain.StoreContext.Handlers
             return new CreateCustomerCommandResult(customer.Id, name.ToString(), email.Address);
         }
 
+        public ICommandResult Handle(CreateCustomerCommand command, Guid id)
+        {
+            //Criar os VO's e a Entidade;
+            var name = new Name(command.FirstName, command.LastName);
+            var email = new Email(command.Email);
+            var document = new Document(command.Document);
+
+            var customer = new Customer(name, email, document, command.Phone);
+
+            //Validar Entidade e VO;
+            AddNotifications(name.Notifications);
+            AddNotifications(email.Notifications);
+            AddNotifications(document.Notifications);
+            AddNotifications(customer.Notifications);
+
+            if (Invalid)//Se houver alguma broblema o Customer não gravado no banco
+                return null;
+
+            //Gravar o cliente  no banco;
+            _repository.Save(customer, id);
+
+            //Enviar Email de boas vindas;
+            _emailService.send(email.Address, "contato@cristianoprogramador.com",
+                                "Atualização de cadastro", "Cadastro atualizado com sucesso");
+
+            //Retornar o resultado para tela;
+            return new CreateCustomerCommandResult(customer.Id, name.ToString(), email.Address);
+        }
+
+
+        public void Delet(Guid ID)
+        {
+            _repository.Delet(ID);
+        }
+
         public ICommandResult Handle(AddAddressCommand command)
         {
             throw new System.NotImplementedException();

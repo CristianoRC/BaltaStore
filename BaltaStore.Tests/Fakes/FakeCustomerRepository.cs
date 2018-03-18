@@ -18,6 +18,11 @@ namespace BaltaStore.Tests.Fakes
             return false;
         }
 
+        public void Delet(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<ListCustomerQueryResult> Get()
         {
             return null;
@@ -36,6 +41,11 @@ namespace BaltaStore.Tests.Fakes
         public void Save(Customer customer)
         {
 
+        }
+
+        public void Save(Customer customer, Guid id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

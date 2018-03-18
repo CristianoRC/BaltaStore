@@ -58,16 +58,21 @@ namespace BaltaStore.API.Controllers
 
         [HttpPut]
         [Route("customers/{id}")]
-        public Customer Put([FromBody]CreateCustomerCommand customer, Guid id)
+        public object Put([FromBody]CreateCustomerCommand customer, Guid id)
         {
-            return null;
+            var resul = _customerHandler.Handle(customer, id);
+
+            if (_customerHandler.Valid)
+                return resul;
+
+            return BadRequest(_customerHandler.Notifications);
         }
 
         [HttpDelete]
         [Route("customers/{id}")]
         public void Delet(Guid id)
         {
-
+            _customerHandler.Delet(id);
         }
     }
 }

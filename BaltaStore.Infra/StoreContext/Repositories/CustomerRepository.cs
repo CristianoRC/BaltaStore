@@ -41,7 +41,7 @@ namespace BaltaStore.Infra.StoreContext.Repositories
         public ListCustomerQueryResult Get(Guid id)
         {
             var sql = @"SELECT customer.id,
-                    ((customer.firstname)::text || (customer.lastname)::text) AS name,
+                    ((customer.firstname)::text || ' ' || (customer.lastname)::text) AS name,
                     customer.document,customer.email
                     FROM customer where id = @id";
 
@@ -59,8 +59,8 @@ namespace BaltaStore.Infra.StoreContext.Repositories
 
         public void Save(Customer customer)
         {
-            _dataContext.Connection.Execute(@"insert into customers values(@ID,@fistName,
-                                            @lastName,@document,@email,@phone)",
+            _dataContext.Connection.Execute(@"insert into customer values(@ID,@fistName,
+                                                @lastName,@document,@email,@phone)",
                 new
                 {
                     ID = customer.Id.ToString(),
@@ -89,6 +89,30 @@ namespace BaltaStore.Infra.StoreContext.Repositories
                     type = addresTemp.Type
                 });
             }
+        }
+
+        public void Save(Customer customer, Guid id)
+        {
+            _dataContext.Connection.Execute(@"update customer set firstName = @fistName,
+                                            lastName = @lastName,
+                                            document = @document,
+                                            email = @email,
+                                            phone = @phone where ID = @ID",
+                new
+                {
+                    ID = id.ToString(),
+                    fistName = customer.Name.FirstName,
+                    lastName = customer.Name.LastName,
+                    document = customer.Document.Number,
+                    email = customer.Email.Address,
+                    phone = customer.Phone
+                });
+        }
+
+        public void Delet(Guid id)
+        {
+            _dataContext.Connection.Execute("delete from customer where id = @id",
+                new { id = id.ToString() });
         }
     }
 }
