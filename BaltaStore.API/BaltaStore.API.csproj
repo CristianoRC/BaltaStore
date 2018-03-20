@@ -3,15 +3,16 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\"/>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
-    <PackageReference Include="Flunt" Version="1.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0"/>
+    <PackageReference Include="Flunt" Version="1.0.2"/>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="2.3.0"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj" />
-    <ProjectReference Include="..\BaltaStore.Shered\BaltaStore.Shered.csproj" />
-    <ProjectReference Include="..\BaltaStore.Infra\BaltaStore.Infra.csproj" />
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj"/>
+    <ProjectReference Include="..\BaltaStore.Shered\BaltaStore.Shered.csproj"/>
+    <ProjectReference Include="..\BaltaStore.Infra\BaltaStore.Infra.csproj"/>
   </ItemGroup>
 </Project>
