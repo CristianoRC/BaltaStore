@@ -19,15 +19,17 @@ namespace BaltaStore.API
         {
             services.AddMvc();
 
-            //Injeção de dependência
+            //Compressão
+            services.AddResponseCompression();
 
+            //Injeção de dependência
             //Vê se tem um na memoria e usa ele
             services.AddScoped<BaltaDataContext, BaltaDataContext>();
 
             //Instancia um novo
             services.AddTransient<ICustomerRepository, CustomerRepository>();
             services.AddTransient<IEmailService, EmailService>();
-            services.AddTransient<CustomerHandler,CustomerHandler>();
+            services.AddTransient<CustomerHandler, CustomerHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +41,9 @@ namespace BaltaStore.API
             }
 
             app.UseMvc();
+
+            //Compressão
+            app.UseResponseCompression();
         }
     }
 }

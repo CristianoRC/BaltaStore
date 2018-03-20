@@ -50,7 +50,7 @@ namespace BaltaStore.Domain.StoreContext.Handlers
             AddNotifications(customer.Notifications);
 
             if (Invalid)//Se houver alguma broblema o Customer não gravado no banco
-                return null;
+                return new CommandResult(false, "Erro ao cadastrar o cliente", Notifications);
 
             //Gravar o cliente  no banco;
             _repository.Save(customer);
@@ -60,7 +60,13 @@ namespace BaltaStore.Domain.StoreContext.Handlers
                                 "Bem vindo", "Cadastro realizado com sucesso");
 
             //Retornar o resultado para tela;
-            return new CreateCustomerCommandResult(customer.Id, name.ToString(), email.Address);
+            return new CommandResult(true, "Cliente Cadastrado com Sucesso",
+                new
+                {
+                    ID = customer.Id,
+                    Name = customer.Name.ToString(),
+                    Email = customer.Email
+                });
         }
 
         public ICommandResult Handle(CreateCustomerCommand command, Guid id)
@@ -79,7 +85,7 @@ namespace BaltaStore.Domain.StoreContext.Handlers
             AddNotifications(customer.Notifications);
 
             if (Invalid)//Se houver alguma broblema o Customer não gravado no banco
-                return null;
+                return new CommandResult(false, "Erro ao cadastrar o cliente", Notifications);
 
             //Gravar o cliente  no banco;
             _repository.Save(customer, id);
@@ -89,7 +95,13 @@ namespace BaltaStore.Domain.StoreContext.Handlers
                                 "Atualização de cadastro", "Cadastro atualizado com sucesso");
 
             //Retornar o resultado para tela;
-            return new CreateCustomerCommandResult(customer.Id, name.ToString(), email.Address);
+            return new CommandResult(true, "Cadastro atualizado com Sucesso",
+                new
+                {
+                    ID = customer.Id,
+                    Name = customer.Name.ToString(),
+                    Email = customer.Email
+                });
         }
 
 

@@ -6,6 +6,7 @@ using BaltaStore.Domain.StoreContext.Entities;
 using BaltaStore.Domain.StoreContext.Handlers;
 using BaltaStore.Domain.StoreContext.Queries;
 using BaltaStore.Domain.StoreContext.Repositories;
+using BaltaStore.Shered.Commands;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BaltaStore.API.Controllers
@@ -45,26 +46,20 @@ namespace BaltaStore.API.Controllers
 
         [HttpPost]
         [Route("v1/customers")]
-        public object Post([FromBody]CreateCustomerCommand customer)
+        public ICommandResult Post([FromBody]CreateCustomerCommand customer)
         {
             var result = (CreateCustomerCommandResult)_customerHandler.Handle(customer);
 
-            if (_customerHandler.Valid)
-                return result;
-
-            return BadRequest(_customerHandler.Notifications);
+            return result;
         }
 
         [HttpPut]
         [Route("v1/customers/{id}")]
-        public object Put([FromBody]CreateCustomerCommand customer, Guid id)
+        public ICommandResult Put([FromBody]CreateCustomerCommand customer, Guid id)
         {
             var resul = _customerHandler.Handle(customer, id);
 
-            if (_customerHandler.Valid)
-                return resul;
-
-            return BadRequest(_customerHandler.Notifications);
+            return resul;
         }
 
         [HttpDelete]
