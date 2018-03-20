@@ -6,7 +6,6 @@ using BaltaStore.Domain.StoreContext.Entities;
 using BaltaStore.Domain.StoreContext.Handlers;
 using BaltaStore.Domain.StoreContext.Queries;
 using BaltaStore.Domain.StoreContext.Repositories;
-using BaltaStore.Infra.StoreContext.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BaltaStore.API.Controllers
@@ -23,21 +22,21 @@ namespace BaltaStore.API.Controllers
         }
 
         [HttpGet]
-        [Route("customers")]
+        [Route("v1/customers")]
         public IEnumerable<ListCustomerQueryResult> Get()
         {
             return _repository.Get();
         }
 
         [HttpGet]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public ListCustomerQueryResult GetByID(Guid id)
         {
             return _repository.Get(id);
         }
 
         [HttpGet]
-        [Route("customers/{id}/orders")]
+        [Route("v1/customers/{id}/orders")]
         public IList<Order> GetOrders(Guid id)
         {
             return null;
@@ -45,7 +44,7 @@ namespace BaltaStore.API.Controllers
 
 
         [HttpPost]
-        [Route("customers")]
+        [Route("v1/customers")]
         public object Post([FromBody]CreateCustomerCommand customer)
         {
             var result = (CreateCustomerCommandResult)_customerHandler.Handle(customer);
@@ -57,7 +56,7 @@ namespace BaltaStore.API.Controllers
         }
 
         [HttpPut]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public object Put([FromBody]CreateCustomerCommand customer, Guid id)
         {
             var resul = _customerHandler.Handle(customer, id);
@@ -69,7 +68,7 @@ namespace BaltaStore.API.Controllers
         }
 
         [HttpDelete]
-        [Route("customers/{id}")]
+        [Route("v1/customers/{id}")]
         public void Delet(Guid id)
         {
             _customerHandler.Delet(id);
