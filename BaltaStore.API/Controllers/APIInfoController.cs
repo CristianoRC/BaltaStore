@@ -25,5 +25,15 @@ namespace BaltaStore.API.Controllers
                 Developer = "Cristiano Raffi Cunha"
             };
         }
+
+        [HttpGet]
+        [Route("v1/info/error")]
+        [ResponseCache(Duration = 60)] //1h
+        public string Error()
+        {
+            throw new System.Exception("Erro: Teste elmah");
+            
+            return "Erro!";
+        }
     }
 }

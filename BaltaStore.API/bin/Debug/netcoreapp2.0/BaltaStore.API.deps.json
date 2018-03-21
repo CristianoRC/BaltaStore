@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "2e6e5deb9a2aa9f3ffcdc9eb672589be862d782d"
+    "signature": "cb9c82a546240348ddc2694ed38ec0ba9d7837be"
   },
   "compilationOptions": {
     "defines": [
@@ -26,6 +26,7 @@
           "BaltaStore.Domain": "1.0.0",
           "BaltaStore.Infra": "1.0.0",
           "BaltaStore.Shered": "1.0.0",
+          "Elmah.Io.AspNetCore": "3.5.54",
           "Flunt": "1.0.2",
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
@@ -49,6 +50,33 @@
         },
         "compile": {
           "lib/netstandard2.0/Dapper.dll": {}
+        }
+      },
+      "Elmah.Io.AspNetCore/3.5.54": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.0.46",
+          "Microsoft.AspNetCore.Http": "2.0.0",
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        }
+      },
+      "Elmah.Io.Client/3.0.46": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.4.0",
+          "Microsoft.Rest.ClientRuntime": "2.3.8",
+          "NETStandard.Library": "2.0.0",
+          "System.Net.Http": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.Client.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.Client.dll": {}
         }
       },
       "Flunt/1.0.2": {
@@ -4114,6 +4142,20 @@
       "sha512": "sha512-t5DMz+1aEkBcyCgkj+6hJHNsUq3k/d67lVMTNzICEhVjPUI3Gt2kgotSK8S4SpziIbFPphnOEn8M6Q75ED5hRQ==",
       "path": "dapper/1.50.4",
       "hashPath": "dapper.1.50.4.nupkg.sha512"
+    },
+    "Elmah.Io.AspNetCore/3.5.54": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YFbAQ5IsPkS3Xph7+gp5ybZ35R955tIc9zmiqz3EcNrvPRK+4g0jR8lc3QQ3ZFqLT2/KVXqVbfOyFmbhkMje5g==",
+      "path": "elmah.io.aspnetcore/3.5.54",
+      "hashPath": "elmah.io.aspnetcore.3.5.54.nupkg.sha512"
+    },
+    "Elmah.Io.Client/3.0.46": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-antm8N51y3uUHS3jlp1PlvQgUB64HbWF5enZ9EQGLOTYoU0sBW70LX6IFoAJaxBBg/nLaEjGKYuv6mpwmLLm2Q==",
+      "path": "elmah.io.client/3.0.46",
+      "hashPath": "elmah.io.client.3.0.46.nupkg.sha512"
     },
     "Flunt/1.0.2": {
       "type": "package",

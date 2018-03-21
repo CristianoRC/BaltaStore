@@ -16,6 +16,35 @@
           "lib/netstandard2.0/Dapper.dll": {}
         }
       },
+      "Elmah.Io.AspNetCore/3.5.54": {
+        "type": "package",
+        "dependencies": {
+          "Elmah.Io.Client": "[3.0.46, 4.0.0)",
+          "Microsoft.AspNetCore.Http": "1.1.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        }
+      },
+      "Elmah.Io.Client/3.0.46": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "Microsoft.Rest.ClientRuntime": "2.3.2",
+          "NETStandard.Library": "1.6.1",
+          "System.Net.Http": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.Client.dll": {}
+        }
+      },
       "Flunt/1.0.2": {
         "type": "package",
         "dependencies": {
@@ -4902,6 +4931,27 @@
         "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Elmah.Io.AspNetCore/3.5.54": {
+      "sha512": "YFbAQ5IsPkS3Xph7+gp5ybZ35R955tIc9zmiqz3EcNrvPRK+4g0jR8lc3QQ3ZFqLT2/KVXqVbfOyFmbhkMje5g==",
+      "type": "package",
+      "path": "elmah.io.aspnetcore/3.5.54",
+      "files": [
+        "elmah.io.aspnetcore.3.5.54.nupkg.sha512",
+        "elmah.io.aspnetcore.nuspec",
+        "lib/netstandard1.1/Elmah.Io.AspNetCore.dll"
+      ]
+    },
+    "Elmah.Io.Client/3.0.46": {
+      "sha512": "antm8N51y3uUHS3jlp1PlvQgUB64HbWF5enZ9EQGLOTYoU0sBW70LX6IFoAJaxBBg/nLaEjGKYuv6mpwmLLm2Q==",
+      "type": "package",
+      "path": "elmah.io.client/3.0.46",
+      "files": [
+        "elmah.io.client.3.0.46.nupkg.sha512",
+        "elmah.io.client.nuspec",
+        "lib/net45/Elmah.Io.Client.dll",
+        "lib/netstandard1.1/Elmah.Io.Client.dll"
       ]
     },
     "Flunt/1.0.2": {
@@ -12787,6 +12837,7 @@
       "BaltaStore.Domain >= 1.0.0",
       "BaltaStore.Infra >= 1.0.0",
       "BaltaStore.Shered >= 1.0.0",
+      "Elmah.Io.AspNetCore >= 3.5.54",
       "Flunt >= 1.0.2",
       "Microsoft.AspNetCore.All >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0",
@@ -12842,6 +12893,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Elmah.Io.AspNetCore": {
+            "target": "Package",
+            "version": "[3.5.54, )"
+          },
           "Flunt": {
             "target": "Package",
             "version": "[1.0.2, )"
