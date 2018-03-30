@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/BaltaStore.API/BaltaStore.API.csproj"
+                "${workspaceFolder}/BaltaStore.MVC/BaltaStore.MVC.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

@@ -32,8 +32,6 @@ namespace BaltaStore.API.Controllers
         public string Error()
         {
             throw new System.Exception("Erro: Teste elmah");
-            
-            return "Erro!";
         }
     }
 }

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaStore.Shered", "BaltaS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaStore.Tests", "BaltaStore.Tests\BaltaStore.Tests.csproj", "{8905604D-68E6-4297-AE3A-1E525BAC1EF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltaStore.MVC", "BaltaStore.MVC\BaltaStore.MVC.csproj", "{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,5 +88,17 @@ Global
 		{8905604D-68E6-4297-AE3A-1E525BAC1EF4}.Release|x64.Build.0 = Release|x64
 		{8905604D-68E6-4297-AE3A-1E525BAC1EF4}.Release|x86.ActiveCfg = Release|x86
 		{8905604D-68E6-4297-AE3A-1E525BAC1EF4}.Release|x86.Build.0 = Release|x86
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|x64.ActiveCfg = Debug|x64
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|x64.Build.0 = Debug|x64
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|x86.ActiveCfg = Debug|x86
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Debug|x86.Build.0 = Debug|x86
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|x64.ActiveCfg = Release|x64
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|x64.Build.0 = Release|x64
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|x86.ActiveCfg = Release|x86
+		{CFF00DF2-CFD7-4972-90C4-CAC68FBB6471}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

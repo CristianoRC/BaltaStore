@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/site.css" rel="stylesheet">
+  </head>
+
+  <body>
+    @Html.Partial("_menu")
+
+    <div class="Container">
+      @RenderBody()
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Balta Store &copy; @DateTime.Now.Year.ToString()</span>
+      </div>
+    </footer>
+  </body>
+</html>
