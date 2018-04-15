@@ -1,3 +1,4 @@
+using System;
 using BaltaStore.Domain.StoreContext.Services;
 using SendGrid;
 using SendGrid.Helpers.Mail;
@@ -8,7 +9,7 @@ namespace BaltaStore.Infra.StoreContext.Services
     {
         public void send(string to, string from, string subject, string body)
         {
-            var apiKey = "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";
+            var apiKey = Environment.GetEnvironmentVariable("SendGridKey");
             var client = new SendGridClient(apiKey);
 
             var fromEmail = new EmailAddress(from, "BaltaStore");
