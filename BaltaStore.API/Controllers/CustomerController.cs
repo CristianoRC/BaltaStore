@@ -48,9 +48,7 @@ namespace BaltaStore.API.Controllers
         [Route("v1/customers")]
         public ICommandResult Post([FromBody]CreateCustomerCommand customer)
         {
-            var result = (CreateCustomerCommandResult)_customerHandler.Handle(customer);
-
-            return result;
+            return _customerHandler.Handle(customer);
         }
 
         [HttpPut]

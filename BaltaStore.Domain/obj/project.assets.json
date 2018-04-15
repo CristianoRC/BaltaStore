@@ -65,7 +65,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "XT5JSlM420ScAODv9lCvAWXwddqloyV+wIXgZMPiqscvs3CqlQoZUh6PwQusWK6HyHy5fTUXtWzBXvXU0pOOVg==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -220,7 +220,7 @@
   },
   "packageFolders": {
     "/home/cristiano/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/home/cristiano/.dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -232,7 +232,7 @@
       "outputPath": "/home/cristiano/Projetos/BaltaStore/BaltaStore.Domain/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "/home/cristiano/.dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "/home/cristiano/.nuget/NuGet/NuGet.Config"

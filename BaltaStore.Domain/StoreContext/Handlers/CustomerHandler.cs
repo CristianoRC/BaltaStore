@@ -57,7 +57,8 @@ namespace BaltaStore.Domain.StoreContext.Handlers
 
             //Enviar Email de boas vindas;
             _emailService.send(email.Address, "contato@cristianoprogramador.com",
-                                "Bem vindo", "Cadastro realizado com sucesso");
+                                "Bem vindo a BaltaStore",
+                                $"Olá {customer.Name.ToString()}, seu cadastro na BaltaStore foi criado com sucesso!");
 
             //Retornar o resultado para tela;
             return new CommandResult(true, "Cliente Cadastrado com Sucesso",

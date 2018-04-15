@@ -3,11 +3,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="1.50.4" />
-    <PackageReference Include="Npgsql" Version="3.2.7" />
+    <PackageReference Include="Dapper" Version="1.50.4"/>
+    <PackageReference Include="Npgsql" Version="3.2.7"/>
+    <PackageReference Include="Sendgrid" Version="9.9.0"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BaltaStore.Shered\BaltaStore.Shered.csproj" />
-    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj" />
+    <ProjectReference Include="..\BaltaStore.Shered\BaltaStore.Shered.csproj"/>
+    <ProjectReference Include="..\BaltaStore.Domain\BaltaStore.Domain.csproj"/>
   </ItemGroup>
 </Project>
